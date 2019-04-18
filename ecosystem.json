@@ -22,7 +22,7 @@
         "path": "/usr/share/nginx/python-document/production",
         "ssh_options": "StrictHostKeyChecking=no",
         "pre-deploy" : "git fetch --all",
-        "post-deploy": "pm2 startOrRestart ecosystem.json --env production",
+        "post-deploy":"cd /usr/share/nginx/a/production/current/ && pm2 startOrRestart ecosystem.json --env production",
         "env": {
           "NODE_ENV": "production"
         }
