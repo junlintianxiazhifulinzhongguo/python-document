@@ -2,7 +2,7 @@
     "apps": [
       {
         "name": "python-document",
-        "script": "serve",
+        "script": "index.html",
         "env": {
           "PM2_SERVE_PORT": 3011,
           "COMMON_VARIABLE": "true"
